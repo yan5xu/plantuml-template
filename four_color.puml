@@ -1,0 +1,43 @@
+@startuml four_color
+!include_once https://raw.githubusercontent.com/yan5xu/plantuml-template/main/base.puml
+
+' 四色建模有四种对象
+' 时标型对象 Moment-Interval
+' PPT对象 Party/Place/Thing
+' 角色对象 Role
+' 描述对象 Description
+
+
+skinparam class<<moment>> {
+    BackgroundColor #D2F3FC
+    FontColor #333333
+    BorderColor #82D0F0
+    HeaderBackgroundColor #C2E8F8
+    BorderRadius 200
+}
+
+skinparam class<<ppt>> {
+    BackgroundColor #D7ECFF
+    FontColor #333333
+    BorderColor #9DBEFF
+    HeaderBackgroundColor #C5E2FF
+    BorderRadius 200
+}
+
+skinparam class<<role>> {
+    BackgroundColor #FCE4E0
+    FontColor #333333
+    BorderColor #FAC0B9
+    HeaderBackgroundColor #FDE0CD
+}
+
+skinparam class<<desc>>{
+    BackgroundColor #F5F0E6
+    FontColor #333333
+    BorderColor #D9B99B
+    HeaderBackgroundColor #E9D8C7
+    BorderRadius 200
+}
+
+
+@enduml
