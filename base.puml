@@ -1,0 +1,17 @@
+@startuml base
+
+
+
+skinparam defaultFontName MesloLGS NF
+
+
+' 改变方向 从上到下
+' left to right direction
+
+hide empty members
+hide circle
+
+
+
+
+@enduml
