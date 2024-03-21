@@ -1,0 +1,54 @@
+@startuml base_ddd_style
+
+
+
+skinparam defaultFontName MesloLGS NF
+
+
+' 改变方向 从上到下
+' left to right direction
+
+hide empty members
+hide circle
+
+
+skinparam class<<value_object>> {
+    BackgroundColor #C8F7C5
+    FontColor #333333
+    BorderColor #72D572
+    HeaderBackgroundColor #B2E7B2
+    BorderRadius 200
+}
+
+
+skinparam class<<api>> {
+    BackgroundColor #FFCDD2
+    FontColor #333333
+    BorderColor #F48FB1
+    HeaderBackgroundColor #FEC8D8
+}
+
+
+skinparam class<<domain>> {
+    BackgroundColor #FFF7BD
+    FontColor #333333
+    BorderColor #FFD166
+    HeaderBackgroundColor #FFECB3
+}
+
+skinparam class<<entity>>{
+    BackgroundColor #E0F2FF
+    FontColor #333333
+    BorderColor #4285F4
+    HeaderBackgroundColor #C7E0F4
+}
+
+skinparam class<<repo>>{
+    BackgroundColor #FFD6A5
+    FontColor #333333
+    BorderColor #FFB366
+    HeaderBackgroundColor #FFE0B2
+}
+
+
+@enduml
