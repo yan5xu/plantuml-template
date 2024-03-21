@@ -1,15 +1,6 @@
 @startuml base_ddd_style
 
-
-
-skinparam defaultFontName MesloLGS NF
-
-
-' 改变方向 从上到下
-' left to right direction
-
-hide empty members
-hide circle
+!include_once https://raw.githubusercontent.com/yan5xu/plantuml-template/main/base.puml
 
 
 skinparam class<<value_object>> {
