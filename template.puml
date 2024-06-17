@@ -1,0 +1,82 @@
+@startuml ddd_template
+
+!include_once https://raw.githubusercontent.com/yan5xu/plantuml-template/main/base.puml
+
+' 定义领域驱动设计中的元素样式
+
+!define bounded_context(name) frame "name" <<bounded_context>>
+!define aggregate_root(name) rectangle "name" <<aggregate_root>> 
+!define aggregate_root(name, str) rectangle "str" as name <<aggregate_root>> 
+!define entity(name) class "name" <<entity>>
+!define entity(name, str) class "str" as name <<entity>>
+!define value_object(name) class "name" <<value_object>>
+!define domain_service(name) class "name" <<domain_service>>
+!define domain_service(name,str) class "str" as name <<domain_service>>
+!define domain_event(name) rectangle "name" <<domain_event>>
+!define repository(name) database "name" <<repository>>
+!define factory(name) rectangle "name" <<factory>>
+!define application_service(name) component "name" <<application_service>>
+
+skinparam rectangle<<aggregate_root>> {
+    BackgroundColor #E1D5E7
+    FontColor #333333
+    BorderColor #9673A6
+}
+
+skinparam class<<entity>> {
+    BackgroundColor #E0F2FF
+    FontColor #333333
+    BorderColor #4285F4
+}
+
+skinparam class<<value_object>> {
+    BackgroundColor #C8F7C5
+    FontColor #333333
+    BorderColor #72D572
+    BorderRadius 20
+}
+
+skinparam class<<domain_service>> {
+    BackgroundColor #FFF7BD
+    FontColor #333333
+    BorderColor #FFD166
+}
+
+skinparam rectangle<<domain_event>> {
+    BackgroundColor #FFE0B2
+    FontColor #333333
+    BorderColor #FFB74D
+}
+
+skinparam database<<repository>> {
+    BackgroundColor #FFD6A5
+    FontColor #333333
+    BorderColor #FFB366
+}
+
+skinparam rectangle<<factory>> {
+    BackgroundColor #D7CCC8
+    FontColor #333333
+    BorderColor #A1887F
+}
+
+skinparam component<<application_service>> {
+    BackgroundColor #B3E5FC
+    FontColor #333333
+    BorderColor #4FC3F7
+}
+
+skinparam frame<<bounded_context>> {
+    BackgroundColor #FFFFFF
+    FontColor #333333
+    BorderColor #333333
+}
+
+' 定义关系样式
+skinparam arrow {
+    Color #333333
+    FontColor #333333
+}
+
+
+@enduml
